@@ -1,7 +1,7 @@
 import requests
 import sys
 
-sub_list = open("subdomains.txt").read()
+sub_list = open("yourdirectorylisthere.txt").read()
 drct = sub_list.splitlines()
 
 for dir in drct:
