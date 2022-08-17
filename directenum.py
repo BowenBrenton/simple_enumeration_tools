@@ -5,7 +5,7 @@ sub_list = open("subdomains.txt").read()
 drct = sub_list.splitlines()
 
 for dir in drct:
-    dir_enum = f"http://{sys.argv[1]}/{dire}"
+    dir_enum = f"http://{sys.argv[1]}/{dir}"
     r = requests.get(dir_enum)
     if r.status_code==404:
         pass
